@@ -20,7 +20,7 @@ class Daemon:
     try:
       pid = os.fork()    #第一次fork，生成子进程，脱离父进程
       if pid > 0:
-        sys.exit(0)      #退出主进程
+        sys.exit(0)      #退出了主进程
     except OSError, e:
       sys.stderr.write('fork #1 failed: %d (%s)\n' % (e.errno, e.strerror))
       sys.exit(1)

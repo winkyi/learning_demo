@@ -4,7 +4,7 @@ __author__ = 'winkyi@163.com'
 
 import sys, os
 
-'''将当前进程fork为一个守护进程
+'''将当前进程fork为守护进程
    注意：如果你的守护进程是由inetd启动的，不要这样做！inetd完成了
    所有需要做的事情，包括重定向标准文件描述符，需要做的事情只有chdir()和umask()了
 '''
