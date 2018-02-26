@@ -1,0 +1,13 @@
+get操作：
+curl -i http://127.0.0.1:5000/todo/api/v1.0/tasks/3
+
+
+post操作：
+curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://127.0.0.1:5000/todo/api/v1.0/tasks
+
+
+put操作：
+curl -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://127.0.0.1:5000/todo/api/v1.0/tasks/2
+
+添加凭证get操作：
+curl -u miguel:python -i http://127.0.0.1:5000/todo/api/v1.0/tasks
